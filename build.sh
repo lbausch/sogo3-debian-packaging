@@ -3,7 +3,7 @@
 set -e
 
 # Version of SOGo which will be built
-VERSION_TO_BUILD="3.2.1"
+VERSION_TO_BUILD="3.2.2"
 
 # Change your name and email address
 export DEBFULLNAME="Lorenz Bausch"
