@@ -2,21 +2,23 @@
 
 set -e
 
-# Version of SOGo which will be built
-VERSION_TO_BUILD="3.2.2"
+CONFIG_FILE="/data/.env"
 
-# Change your name and email address
-export DEBFULLNAME="Lorenz Bausch"
-export DEBEMAIL="info@lorenzbausch.de"
+if [ ! -f $CONFIG_FILE ]; then
+    echo "Error: You need to create a .env file. See .env.example for reference and run 'vagrant provision' to build packages"
+    exit 1
+fi
 
-# ---
+set -a
+. $CONFIG_FILE
+set +a
 
 REPOSITORY_SOGO="https://github.com/inverse-inc/sogo.git"
 REPOSITORY_SOPE="https://github.com/inverse-inc/sope.git"
 SOGO_GIT_TAG="SOGo-${VERSION_TO_BUILD}"
 SOPE_GIT_TAG="SOPE-${VERSION_TO_BUILD}"
 
-PACKAGES_DIR="/packages"
+PACKAGES_DIR="/data/packages"
 PACKAGES_TO_INSTALL="git zip tmpreaper build-essential dpkg-dev devscripts liblasso3 liblasso3-dev gnustep-make libgnustep-base-dev libldap2-dev libpq-dev libmysqlclient-dev libsbjson2.3 libsbjson-dev libmemcached-dev libcurl4-openssl-dev libexpat-dev libpopt-dev"
 
 export DEBIAN_FRONTEND=noninteractive
