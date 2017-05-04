@@ -27,11 +27,11 @@ cd $PACKAGES_DIR
 
 apt-get install -y $PACKAGES_TO_INSTALL
 
-wget -qc https://packages.inverse.ca/SOGo/nightly/2/debian/pool/jessie/w/wbxml2/libwbxml2-dev_0.11.2-1.1_amd64.deb
-wget -qc https://packages.inverse.ca/SOGo/nightly/2/debian/pool/jessie/w/wbxml2/libwbxml2-0_0.11.2-1.1_amd64.deb
+wget -qc https://packages.inverse.ca/SOGo/nightly/2/debian/pool/jessie/w/wbxml2/libwbxml2-dev_0.11.5-1_amd64.deb
+wget -qc https://packages.inverse.ca/SOGo/nightly/2/debian/pool/jessie/w/wbxml2/libwbxml2-0_0.11.5-1_amd64.deb
 
-dpkg -i libwbxml2-0_0.11.2-1.1_amd64.deb
-dpkg -i libwbxml2-dev_0.11.2-1.1_amd64.deb
+dpkg -i libwbxml2-0_0.11.5-1_amd64.deb
+dpkg -i libwbxml2-dev_0.11.5-1_amd64.deb
 
 apt-get -f install -y
 
