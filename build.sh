@@ -43,7 +43,7 @@ else
     cd sope
 fi
 
-git checkout --force $SOPE_GIT_TAG
+git checkout --force "$SOPE_GIT_TAG"
 
 if [ ! -d "debian" ]; then
     cp -a packaging/debian debian
@@ -65,7 +65,7 @@ else
     cd sogo
 fi
 
-git checkout --force $SOGO_GIT_TAG
+git checkout --force "$SOGO_GIT_TAG"
 
 if [ -d "debian" ]; then
     rm -rf debian
@@ -73,7 +73,7 @@ fi
 
 cp -a packaging/debian debian
 
-dch --newversion $VERSION_TO_BUILD "Automated build for version $VERSION_TO_BUILD"
+dch --newversion "$VERSION_TO_BUILD" "Automated build for version $VERSION_TO_BUILD"
 
 cp packaging/debian-multiarch/control-no-openchange debian
 
