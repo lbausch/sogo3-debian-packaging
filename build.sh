@@ -19,7 +19,7 @@ SOGO_GIT_TAG="SOGo-${VERSION_TO_BUILD}"
 SOPE_GIT_TAG="SOPE-${VERSION_TO_BUILD}"
 
 PACKAGES_DIR="/data/packages"
-PACKAGES_TO_INSTALL="git zip tmpreaper build-essential dpkg-dev devscripts liblasso3 liblasso3-dev gnustep-make libgnustep-base-dev libldap2-dev libpq-dev libmysqlclient-dev libsbjson2.3 libsbjson-dev libmemcached-dev libcurl4-openssl-dev libexpat-dev libpopt-dev"
+PACKAGES_TO_INSTALL="git zip tmpreaper build-essential dpkg-dev devscripts liblasso3 liblasso3-dev gnustep-make libgnustep-base-dev libldap2-dev libpq-dev libmariadbclient-dev libsbjson2.3 libsbjson-dev libmemcached-dev libcurl4-openssl-dev libexpat-dev libpopt-dev"
 
 export DEBIAN_FRONTEND=noninteractive
 
