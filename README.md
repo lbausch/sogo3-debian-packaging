@@ -13,5 +13,5 @@ Build [SOGo](https://sogo.nu/) packages (without OpenChange) for Debian 8 direct
 1. Done! Find the deb-packages inside the `packages` directory
 1. Optional: Destroy the virtual machine with `vagrant destroy` or execute `vagrant halt` to keep it for later use
 
-## See also
-+ Docker image for building SOGo packages: https://github.com/pluhmen/docker-sogo-build-jessie
+## Looking for SOGo 4?
+See https://github.com/lbausch/sogo4-debian-packaging which also has support for GitLab CI.
